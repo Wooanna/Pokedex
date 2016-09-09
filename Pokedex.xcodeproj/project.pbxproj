@@ -13,6 +13,8 @@
 		EFA9EE161D782C0300EA1E94 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EFA9EE141D782C0300EA1E94 /* Main.storyboard */; };
 		EFA9EE181D782C0300EA1E94 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EFA9EE171D782C0300EA1E94 /* Assets.xcassets */; };
 		EFA9EE1B1D782C0300EA1E94 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EFA9EE191D782C0300EA1E94 /* LaunchScreen.storyboard */; };
+		EFA9EE231D7867B400EA1E94 /* Pokemon.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFA9EE221D7867B400EA1E94 /* Pokemon.swift */; };
+		EFA9EE271D7870BF00EA1E94 /* PokeCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFA9EE261D7870BF00EA1E94 /* PokeCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +28,8 @@
 		EFA9EE171D782C0300EA1E94 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		EFA9EE1A1D782C0300EA1E94 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		EFA9EE1C1D782C0300EA1E94 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EFA9EE221D7867B400EA1E94 /* Pokemon.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Pokemon.swift; sourceTree = "<group>"; };
+		EFA9EE261D7870BF00EA1E94 /* PokeCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PokeCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -78,6 +82,8 @@
 		EFA9EE0F1D782C0200EA1E94 /* Pokedex */ = {
 			isa = PBXGroup;
 			children = (
+				EFA9EE251D7870A000EA1E94 /* View */,
+				EFA9EE241D7867BE00EA1E94 /* Model */,
 				EFA9EE101D782C0200EA1E94 /* AppDelegate.swift */,
 				EFA9EE121D782C0200EA1E94 /* ViewController.swift */,
 				EFA9EE141D782C0300EA1E94 /* Main.storyboard */,
@@ -86,6 +92,22 @@
 				EFA9EE1C1D782C0300EA1E94 /* Info.plist */,
 			);
 			path = Pokedex;
+			sourceTree = "<group>";
+		};
+		EFA9EE241D7867BE00EA1E94 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				EFA9EE221D7867B400EA1E94 /* Pokemon.swift */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		EFA9EE251D7870A000EA1E94 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				EFA9EE261D7870BF00EA1E94 /* PokeCell.swift */,
+			);
+			name = View;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -213,8 +235,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EFA9EE271D7870BF00EA1E94 /* PokeCell.swift in Sources */,
 				EFA9EE131D782C0200EA1E94 /* ViewController.swift in Sources */,
 				EFA9EE111D782C0200EA1E94 /* AppDelegate.swift in Sources */,
+				EFA9EE231D7867B400EA1E94 /* Pokemon.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
