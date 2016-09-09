@@ -19,7 +19,7 @@ class DetailPokemonVC: UIViewController {
     
     @IBOutlet weak var typeLabel: UILabel!
     @IBOutlet weak var defenceLabel: UILabel!
-    @IBOutlet weak var pokedexIdLabel: UIStackView!
+    @IBOutlet weak var pokedexIdLabel: UILabel!
     @IBOutlet weak var baseAttackLabel: UILabel!
     @IBOutlet weak var heightLabel: UILabel!
     @IBOutlet weak var weightLabel: UILabel!
@@ -30,8 +30,26 @@ class DetailPokemonVC: UIViewController {
         super.viewDidLoad()
         
         pokemonNameLabel.text = pokemon.name
+        let image = UIImage(named: "\(pokemon.pokedexId)")
+        mainImage.image = image
+        currentEvoImage.image = image
+        pokedexIdLabel.text = "\(pokemon.pokedexId)"
+        pokemon.downloadPokemonDetails {
+            print("downloaded")
+            self.updateUI()
+        }
     }
 
+    func updateUI() {
+        baseAttackLabel.text = pokemon.attack
+        typeLabel.text = pokemon.type
+        defenceLabel.text = pokemon.defense
+        heightLabel.text = pokemon.height
+        weightLabel.text = pokemon.weight
+        descriptionLabel.text = pokemon.description
+        
+    }
+    
     @IBAction func backBtnPressed(_ sender: AnyObject) {
         dismiss(animated: true, completion: nil)
     }

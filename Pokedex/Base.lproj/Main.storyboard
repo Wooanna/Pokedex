@@ -263,7 +263,7 @@
                         <outlet property="heightLabel" destination="CvL-ed-kJ4" id="fjz-gz-Qnx"/>
                         <outlet property="mainImage" destination="TrE-wa-vmG" id="BQK-2A-Zfh"/>
                         <outlet property="nextEvoImage" destination="QeS-nD-Ekj" id="Z9P-Hk-oLA"/>
-                        <outlet property="pokedexIdLabel" destination="ihx-xy-u8A" id="3Zg-HS-mpO"/>
+                        <outlet property="pokedexIdLabel" destination="NrI-xZ-f6I" id="Xr2-TR-44x"/>
                         <outlet property="pokemonNameLabel" destination="G9w-ZH-6wg" id="ch3-MF-ghb"/>
                         <outlet property="typeLabel" destination="VF2-HV-pU7" id="Ulq-ae-uc2"/>
                         <outlet property="weightLabel" destination="pTf-Ia-Ff4" id="XW2-3D-vQK"/>

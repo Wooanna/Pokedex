@@ -36,6 +36,11 @@
 	</array>
 	<key>LSApplicationCategoryType</key>
 	<string></string>
+	<key>NSAppTransportSecurity</key>
+	<dict>
+		<key>NSAllowsArbitraryLoads</key>
+		<true/>
+	</dict>
 	<key>UIAppFonts</key>
 	<array>
 		<string>Pokemon Hollow.ttf</string>
