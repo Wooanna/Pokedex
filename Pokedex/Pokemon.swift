@@ -121,7 +121,7 @@ class Pokemon {
                     self._type = ""
                 }
                 
-                if let descArr = dict["description"] as? Array<Dictionary<String, String>>, descArr.count > 0 {
+                if let descArr = dict["descriptions"] as? Array<Dictionary<String, String>>, descArr.count > 0 {
                     if let url = descArr[0]["resource_uri"] {
                         let descUrl = "\(URL_BASE)\(url)"
                         Alamofire.request(descUrl, withMethod: .get).responseJSON(completionHandler: { (response) in
@@ -133,6 +133,8 @@ class Pokemon {
                             completed()
                         })
                     }
+                } else {
+                    self._description = ""
                 }
             }
             
